@@ -3,7 +3,6 @@ import java.util.*;
 
 public class ProdutoDAO {
 
-    @SuppressWarnings("CallToPrintStackTrace")
     public void inserir(Produto p) {
         String sql = "INSERT INTO produtos (nome, preco) VALUES (?, ?)";
 
@@ -56,7 +55,6 @@ public void atualizar(Produto p) {
     }
 }
 
-@SuppressWarnings("CallToPrintStackTrace")
 public void deletar(int id) {
     String sql = "DELETE FROM produtos WHERE id=?";
 
